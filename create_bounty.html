@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Bounty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="create-bounty-container">
+        <h2>Create a Bounty</h2>
+        <form>
+            <label for="org-name">Organization Name:</label>
+            <input type="text" id="org-name" name="org-name" required>
+            
+            <label for="services">Services (input as links):</label>
+            <input type="url" id="service1" name="services[]" placeholder="https://example.com" required>
+            <input type="url" id="service2" name="services[]" placeholder="https://example.com">
+            <input type="url" id="service3" name="services[]" placeholder="https://example.com">
+            
+            <button type="submit" class="button">Create Bounty</button>
+        </form>
+        
+        <div class="rules">
+            <h3>Penetration Testing Rules</h3>
+            <ul>
+                <li>Do not perform any actions that would degrade the service or negatively impact users.</li>
+                <li>Only test within the scope of the services listed.</li>
+                <li>Do not disclose any vulnerabilities to the public before notifying the organization.</li>
+                <li>Respect user privacy and data protection regulations.</li>
+                <li>Provide detailed reports of any vulnerabilities found, including steps to reproduce and potential impact.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
